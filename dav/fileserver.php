@@ -5,6 +5,7 @@ $tmpDir = BLOGUPLOADDIR.'/tmpdata';
 if (!is_dir(BLOGUPLOADDIR)) mkdir(BLOGUPLOADDIR);
 if (!is_dir($tmpDir)) mkdir($tmpDir);
 
+$baseUri='/filepress';
 // Create the root node
 $root = new Sabre_DAV_FS_Directory($publicDir);
 

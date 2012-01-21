@@ -5,12 +5,12 @@
  Description: Filepress is a plugin that allows you to edit your Wordpress files from any file browser.
 
  Author: Zingiri
- Version: 0.9.1
+ Version: 0.9.2
  Author URI: http://www.zingiri.com/
  */
 
 define('FILEPRESS','Filepress');
-define('FILEPRESS_VERSION','0.9.1');
+define('FILEPRESS_VERSION','0.9.2');
 
 if (!defined("BLOGUPLOADDIR")) {
 	$upload=wp_upload_dir();
@@ -47,8 +47,9 @@ function filepress_deactivate() {
 function filepress_init() {
 	if (is_admin()) return;
 	filepress_log(0,$_SERVER);
-	//if ($_SERVER['REQUEST_METHOD']=='GET') {
-		if (($_SERVER['REQUEST_METHOD']=='PROPFIND') || strstr(strtolower($_SERVER['HTTP_USER_AGENT']),'webdav')) {
+	if (($_SERVER['REQUEST_METHOD']=='PROPFIND')
+	//|| ($_SERVER['REQUEST_METHOD']=='GET') {
+	|| strstr(strtolower($_SERVER['HTTP_USER_AGENT']),'webdav')) {
 		require(dirname(__FILE__).'/dav/lib/Sabre/autoload.php');
 		ob_start();
 		if (!session_id()) @session_start();
