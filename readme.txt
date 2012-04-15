@@ -4,7 +4,7 @@ Donate link: http://www.zingiri.com/donations
 Tags: webdav, files, ftp
 Requires at least: 2.1.7
 Tested up to: 3.3.1
-Stable tag: 0.9.2
+Stable tag: 1.0.0
 
 Filepress is a plugin that allows you to edit your Wordpress files from any file browser.
 
@@ -32,6 +32,9 @@ No screenshots here but have a look at [our site](http://www.zingiri.com/portal/
 
 
 == Changelog ==
+
+= 1.0.0 =
+* Replaced remote logo with local file
 
 = 0.9.2 =
 * Updated instructions

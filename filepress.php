@@ -5,12 +5,12 @@
  Description: Filepress is a plugin that allows you to edit your Wordpress files from any file browser.
 
  Author: Zingiri
- Version: 0.9.2
+ Version: 1.0.0
  Author URI: http://www.zingiri.com/
  */
 
 define('FILEPRESS','Filepress');
-define('FILEPRESS_VERSION','0.9.2');
+define('FILEPRESS_VERSION','1.0.0');
 
 if (!defined("BLOGUPLOADDIR")) {
 	$upload=wp_upload_dir();
