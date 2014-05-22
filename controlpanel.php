@@ -106,7 +106,5 @@ function filepress_admin() {
 
 </div> <!-- end cc-left -->
 <?php
-	require(dirname(__FILE__).'/includes/support-us.inc.php');
-	zing_support_us('filepress','filepress','filepress',FILEPRESS_VERSION);
 }
 add_action('admin_menu', 'filepress_add_admin'); ?>

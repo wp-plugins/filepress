@@ -232,7 +232,6 @@ if (!class_exists('zHttpRequest')) {
 			$newfiles=array();
 
 			if (!session_id()) { 
-				//$prevSessionName=session_name('zingiri'); 
 				@session_start(); 
 			}
 			$ch = curl_init();    // initialize curl handle

@@ -1,16 +1,16 @@
 <?php
 /*
  Plugin Name: Filepress
- Plugin URI: http://www.zingiri.com
+ Plugin URI: http://www.choppedcode.com
  Description: Filepress is a plugin that allows you to edit your Wordpress files from any file browser.
 
- Author: Zingiri
- Version: 1.0.0
- Author URI: http://www.zingiri.com/
+ Author: choppedcode
+ Version: 1.0.1
+ Author URI: http://www.choppedcode.com/
  */
 
 define('FILEPRESS','Filepress');
-define('FILEPRESS_VERSION','1.0.0');
+define('FILEPRESS_VERSION','1.0.1');
 
 if (!defined("BLOGUPLOADDIR")) {
 	$upload=wp_upload_dir();
